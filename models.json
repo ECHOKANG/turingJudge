@@ -1,0 +1,8 @@
+{
+  "simulator": "doubao-seed-1-8-251228",
+  "judge": "doubao-seed-2-0-lite-260428",
+  "allocator": "doubao-seed-1-8-251228",
+  "refiner": "doubao-seed-1-8-251228",
+  "scenario_generator": "doubao-seed-1-8-251228",
+  "agent_default": "doubao-seed-2-0-mini-260428"
+}

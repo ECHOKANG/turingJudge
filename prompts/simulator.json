@@ -1,0 +1,7 @@
+{
+  "defaults": {
+    "identity": "普通用户",
+    "scene_premise": "（无特定场景，按常规对话处理）",
+    "background": "（无补充背景）"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "opening_message": "你好，请开始对话。",
+  "end_signal": "[END]",
+  "loop_detection": {
+    "similarity_threshold": 0.90,
+    "consecutive_limit": 3
+  },
+  "refusal_phrases": [
+    "我向同事确认",
+    "稍后回电",
+    "稍后答复",
+    "我去问",
+    "回头答复",
+    "这个我不太清楚",
+    "我得问一下",
+    "稍等我确认"
+  ],
+  "refusal_threshold": 2,
+  "placeholder_patterns": [
+    ["\\$\\{[\\w]+\\}", "${var} 模板变量"],
+    ["\\{\\{[\\w\\s]+\\}\\}", "{{var}} 模板变量"],
+    ["(?<![\\w])\\{[\\w]+\\}(?![\\w])", "{var} 模板变量"],
+    ["<[A-Za-z_][\\w]*>", "<var> 占位符"],
+    ["(?<![\\w])\\[[A-Z_][A-Z0-9_]{1,30}\\](?![\\w])", "[VAR] 占位符"],
+    ["(?<![A-Za-z])[XYZWN](?![A-Za-z\\d])", "孤立大写字母占位 (X/Y/Z/W/N)"]
+  ]
+}
